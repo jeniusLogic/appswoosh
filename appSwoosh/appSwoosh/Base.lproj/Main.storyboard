@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appSwoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="appSwoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,16 +22,16 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd8-ty-p3c">
-                                <rect key="frame" x="78.666666666666686" y="320" width="257" height="16.666666666666686"/>
+                                <rect key="frame" x="78.666666666666686" y="316" width="257" height="16.666666666666686"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oUW-M4-Vz0">
-                                <rect key="frame" x="147.66666666666663" y="40" width="118.99999999999997" height="20"/>
+                                <rect key="frame" x="199" y="40" width="16" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74N-JN-xH2">
-                                <rect key="frame" x="77" y="200" width="260" height="67"/>
+                                <rect key="frame" x="77" y="196" width="260" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="l7R-Gn-R3z"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Going All Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pA-RM-mg2">
-                                <rect key="frame" x="110.66666666666669" y="267" width="193" height="33"/>
+                                <rect key="frame" x="110.66666666666669" y="263" width="193" height="33"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="-130" y="-152"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="d2g-kw-B1W">
             <objects>
-                <viewController id="87w-VA-qZS" sceneMemberID="viewController">
+                <viewController id="87w-VA-qZS" customClass="LeagueVC" customModule="appSwoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DgU-Ts-qrB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,10 +215,10 @@
             </objects>
             <point key="canvasLocation" x="831.88405797101461" y="-152.44565217391306"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="GWg-bv-UdJ">
             <objects>
-                <viewController id="bm8-ne-M2j" sceneMemberID="viewController">
+                <viewController id="bm8-ne-M2j" customClass="SkillVC" customModule="appSwoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kbx-DA-hay">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
