@@ -13,6 +13,7 @@
 		BCFF8F36229BF52300789BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF8F35229BF52300789BF0 /* Assets.xcassets */; };
 		BCFF8F39229BF52300789BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF8F37229BF52300789BF0 /* LaunchScreen.storyboard */; };
 		BCFF8F44229BFCEA00789BF0 /* Boarder Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF8F43229BFCEA00789BF0 /* Boarder Button.swift */; };
+		BCFF8F46229C4A8B00789BF0 /* nextViewButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF8F45229C4A8B00789BF0 /* nextViewButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BCFF8F38229BF52300789BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCFF8F3A229BF52300789BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFF8F43229BFCEA00789BF0 /* Boarder Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boarder Button.swift"; sourceTree = "<group>"; };
+		BCFF8F45229C4A8B00789BF0 /* nextViewButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nextViewButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFF8F43229BFCEA00789BF0 /* Boarder Button.swift */,
+				BCFF8F45229C4A8B00789BF0 /* nextViewButtons.swift */,
 			);
 			path = "Custom View Code";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCFF8F31229BF52200789BF0 /* ViewController.swift in Sources */,
+				BCFF8F46229C4A8B00789BF0 /* nextViewButtons.swift in Sources */,
 				BCFF8F2F229BF52200789BF0 /* AppDelegate.swift in Sources */,
 				BCFF8F44229BFCEA00789BF0 /* Boarder Button.swift in Sources */,
 			);
