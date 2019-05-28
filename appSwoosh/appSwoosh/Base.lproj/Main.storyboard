@@ -136,6 +136,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="87w-VA-qZS" eventType="touchUpInside" id="8YC-L9-Cn1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b9-Tx-hYQ" customClass="nextViewButtons" customModule="appSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="91" width="414" height="50"/>
@@ -147,6 +150,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="87w-VA-qZS" eventType="touchUpInside" id="5xx-Ss-PXH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D78-kA-cQc" customClass="nextViewButtons" customModule="appSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="182" width="414" height="50"/>
@@ -158,10 +164,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdTapped:" destination="87w-VA-qZS" eventType="touchUpInside" id="YEy-Vs-UOM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8E-GQ-oNL" customClass="Boarder_Button" customModule="appSwoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8E-GQ-oNL" customClass="Boarder_Button" customModule="appSwoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="666" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.00073366116750000002" green="0.00073366116750000002" blue="0.00073366116750000002" alpha="0.31338291950000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -210,6 +219,7 @@
                         <viewLayoutGuide key="safeArea" id="6ir-GO-t3K"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="B8E-GQ-oNL" id="OSy-JI-f2p"/>
                         <segue destination="bm8-ne-M2j" kind="show" identifier="skillVCSegue" id="BWG-JR-NoR"/>
                     </connections>
                 </viewController>
@@ -235,8 +245,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-UM-b7S">
                                         <rect key="frame" x="147.66666666666666" y="0.0" width="118.99999999999997" height="20"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired League" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW0-Qa-B1f">
-                                        <rect key="frame" x="134.66666666666669" y="57.000000000000007" width="144.66666666666669" height="27.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW0-Qa-B1f">
+                                        <rect key="frame" x="171.66666666666666" y="57.000000000000007" width="70.666666666666657" height="27.333333333333336"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -253,7 +263,7 @@
                                             <constraint firstAttribute="height" constant="50" id="sMM-cZ-cPd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Mens">
+                                        <state key="normal" title="Beginner">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -264,17 +274,34 @@
                                             <constraint firstAttribute="height" constant="50" id="JtP-se-Ci5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                        <state key="normal" title="Womens">
+                                        <state key="normal" title="Baller">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrd-4r-Ifi" customClass="Boarder_Button" customModule="appSwoosh" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.00073366116750000002" green="0.00073366116750000002" blue="0.00073366116750000002" alpha="0.31338291950000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mvW-oH-hIF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="87w-VA-qZS" eventType="touchUpInside" id="DOh-0S-K37"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bHj-xX-uwg" firstAttribute="leading" secondItem="9lb-BP-BtL" secondAttribute="leading" id="5F3-0W-qKl"/>
+                            <constraint firstItem="Hrd-4r-Ifi" firstAttribute="bottom" secondItem="9lb-BP-BtL" secondAttribute="bottom" id="Ben-8Q-Nr6"/>
                             <constraint firstItem="bHj-xX-uwg" firstAttribute="top" secondItem="9lb-BP-BtL" secondAttribute="top" constant="300" id="EW6-1M-p1m"/>
+                            <constraint firstItem="Hrd-4r-Ifi" firstAttribute="leading" secondItem="9lb-BP-BtL" secondAttribute="leading" id="O9z-fd-NUX"/>
+                            <constraint firstItem="Hrd-4r-Ifi" firstAttribute="trailing" secondItem="9lb-BP-BtL" secondAttribute="trailing" id="QuM-Ef-2Ja"/>
                             <constraint firstItem="9lb-BP-BtL" firstAttribute="trailing" secondItem="OG6-xE-pkc" secondAttribute="trailing" id="S3D-4t-JIR"/>
                             <constraint firstItem="woZ-Ld-ZhM" firstAttribute="leading" secondItem="9lb-BP-BtL" secondAttribute="leading" id="SIi-gf-UAT"/>
                             <constraint firstItem="woZ-Ld-ZhM" firstAttribute="bottom" secondItem="9lb-BP-BtL" secondAttribute="bottom" id="ady-58-Zxk"/>
