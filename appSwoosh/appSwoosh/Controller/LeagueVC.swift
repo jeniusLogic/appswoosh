@@ -10,12 +10,12 @@ import UIKit
 
 class LeagueVC: UIViewController {
     
-    var player: Player!
+    var playerX: Player!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    player = Player()
+    playerX = Player()
 
         // Do any additional setup after loading the view.
     }
@@ -45,8 +45,16 @@ class LeagueVC: UIViewController {
     }
     
     func selectLeague(leagueType: String) {
-        player.desiredLeague = leagueType
+        playerX.desiredLeague = leagueType
         nextBtn.isEnabled = true
+    }
+    
+    
+    //Prepare for segue is ALWAYS called before viewDidLoad on the destination view controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {//Passing data between view controllers
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = playerX
+        }
     }
     
 }
