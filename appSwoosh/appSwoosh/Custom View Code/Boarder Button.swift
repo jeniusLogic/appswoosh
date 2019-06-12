@@ -12,9 +12,10 @@ class Boarder_Button: UIButton {
 
     override func awakeFromNib() { // When you override you always have to call super
         super.awakeFromNib()
-        layer.awakeFromNib()
+        layer.awakeFromNib()//Layer is a property of UIButton which inherits from UIView
         layer.borderWidth = 3.0
-        layer.borderColor = UIColor.white.cgColor
+        layer.borderColor = UIColor.green.cgColor
+        layer.backgroundColor = UIColor.gray.cgColor
         
     }
 
