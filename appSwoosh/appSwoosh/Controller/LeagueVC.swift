@@ -10,7 +10,7 @@ import UIKit
 
 class LeagueVC: UIViewController {
     
-    var playerX: Player!
+    var playerX: Player! //Declaring 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +22,14 @@ class LeagueVC: UIViewController {
     
     
     
-    @IBAction func onNextTapped(_ sender: Any) {
+    @IBAction func onNextTapped(_ sender: Any) { 
         performSegue(withIdentifier: "skillVCSegue", sender: self) //loading the seqgue programatically
         print("Segue worked")
     }
+    
+    
+    
+    
     
     @IBOutlet weak var nextBtn: Boarder_Button!
     

@@ -14,4 +14,6 @@ struct Player{
     var desriedSkillLevel: String!
     
     
+    
+    
 }
