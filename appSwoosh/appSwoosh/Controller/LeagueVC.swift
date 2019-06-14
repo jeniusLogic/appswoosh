@@ -56,8 +56,9 @@ class LeagueVC: UIViewController {
     
     //Prepare for segue is ALWAYS called before viewDidLoad on the destination view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {//Passing data between view controllers
-        if let skillVC = segue.destination as? SkillVC {
-            skillVC.player = playerX
+        
+        if let skillVC = segue.destination as? SkillVC {//if let sequence will try and run this statment 
+            skillVC.player2 = playerX
         }
     }
     
