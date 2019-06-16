@@ -29,9 +29,22 @@ class LeagueVC: UIViewController {
     
     
     
-    
-    
     @IBOutlet weak var nextBtn: Boarder_Button!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+
     
     @IBAction func onMensTapped(_ sender: Any) {
         //player.desiredLeague = "mens"
@@ -41,9 +54,14 @@ class LeagueVC: UIViewController {
         selectLeague(leagueType: "mens")
     }
     
+    
+    
     @IBAction func onWomensTapped(_ sender: Any) {
        selectLeague(leagueType: "womens")
     }
+    
+    
+    
     @IBAction func onCoEdTapped(_ sender: Any) {
         selectLeague(leagueType: "coed")
     }
@@ -52,6 +70,19 @@ class LeagueVC: UIViewController {
         playerX.desiredLeague = leagueType
         nextBtn.isEnabled = true
     }
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     //Prepare for segue is ALWAYS called before viewDidLoad on the destination view controller
@@ -63,3 +94,31 @@ class LeagueVC: UIViewController {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
